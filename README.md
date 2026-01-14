@@ -16,51 +16,50 @@
 
 # Schema bloc
                     +-----------------------------+
-                    |        HoloLens 2           |
+                    |    HoloLens 2 / Emulator    |
                     +-----------------------------+
                     |                             |
-                    | Captură video în timp real  |
+                    |      Direcția privirii      |
                     |                             |
                     +-------------+---------------+
                                   |
-                                  |  Transmisie flux video (HTTP/USB)
+                                  |  
                                   |
                     +-------------v---------------+
-                    |          PC                |
+                    |           XR Rig            |
                     +-----------------------------+
                     |                             |
-                    |   Preluarea fluxului video  |
-                    |   (OpenCV, VideoCapture)    |
+                    |     Poziție + rotație cap   |
+                    |       (Main Camera XR)      |
                     |                             |
                     +-------------+---------------+
                                   |
-                                  | Procesare imagini în C++
+                                  | 
                                   |
                     +-------------v---------------+
-                    | Procesare și filtrare imagini |
+                    |      Modul detecție Gaze    |
                     +-----------------------------+
-                    | - Reducere zgomot            |
-                    | - Conversie alb-negru        |
-                    | - Detecție contururi         |
+                    |     Raycast din cameră      |
+                    |    pe direcția privirii     |
+                    |                             |
                     +-------------+---------------+
                                   |
-                                  | Detectare Obiecte
+                                  |
                                   |
                     +-------------v---------------+
-                    |   Algoritmi de Detecție    |
-                    |  (de ex: YOLO, SSD, etc.)  |
+                    |   Obiect virtual detectat   |
                     +-----------------------------+
+                    |         (Cub / Sferă        |
+                    |       Cilindru/ Capsulă)    |
                     |                             |
-                    |   Detectare și clasificare  |
-                    |   - Cutii delimitatoare     |
-                    |   - Probabilități           |
                     +-------------+---------------+
                                   |
-                                  | Vizualizare rezultate
+                                  |
                                   |
                     +-------------v---------------+
                     |       Afișare pe PC         |
                     +-----------------------------+
-                    | - Afișare în timp real      |
-                    | - Înregistrare rezultate    |
+                    |     Evidențiere obiect      |
+                    |     (schimbare culoare      |
+                    |     + denumire obiect)      |
                     +-----------------------------+
