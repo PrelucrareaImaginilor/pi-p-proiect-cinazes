@@ -15,51 +15,6 @@
 
 
 # Schema bloc
-                    +-----------------------------+
-                    |    HoloLens 2 / Emulator    |
-                    +-----------------------------+
-                    |                             |
-                    |      Direcția privirii      |
-                    |                             |
-                    +-------------+---------------+
-                                  |
-                                  |  
-                                  |
-                    +-------------v---------------+
-                    |           XR Rig            |
-                    +-----------------------------+
-                    |                             |
-                    |     Poziție + rotație cap   |
-                    |       (Main Camera XR)      |
-                    |                             |
-                    +-------------+---------------+
-                                  |
-                                  | 
-                                  |
-                    +-------------v---------------+
-                    |      Modul detecție Gaze    |
-                    +-----------------------------+
-                    |     Raycast din cameră      |
-                    |    pe direcția privirii     |
-                    |                             |
-                    +-------------+---------------+
-                                  |
-                                  |
-                                  |
-                    +-------------v---------------+
-                    |   Obiect virtual detectat   |
-                    +-----------------------------+
-                    |         (Cub / Sferă        |
-                    |       Cilindru/ Capsulă)    |
-                    |                             |
-                    +-------------+---------------+
-                                  |
-                                  |
-                                  |
-                    +-------------v---------------+
-                    |       Afișare pe PC         |
-                    +-----------------------------+
-                    |     Evidențiere obiect      |
-                    |     (schimbare culoare      |
-                    |     + denumire obiect)      |
-                    +-----------------------------+
+
+<img width="671" height="677" alt="image (13)" src="https://github.com/user-attachments/assets/81583110-7a4f-4ae2-b671-ba51d556eef4" />
+
